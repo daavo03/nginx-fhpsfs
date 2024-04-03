@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nginxtest
+    ports:
+      - '80:80'
+    volumes:
+      - .:/sites/demo
+      - ./nginx.conf:/etc/nginx/nginx.conf
