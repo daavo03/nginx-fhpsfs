@@ -4,4 +4,4 @@ RUN apt-get update
 
 WORKDIR /sites/demo
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"] 
